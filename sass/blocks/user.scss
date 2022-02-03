@@ -1,0 +1,63 @@
+.user__field-name {
+  @media (min-width: $tablet-width) {
+    top: 68px;
+  }
+}
+
+.user__list {
+  padding-top: 28px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 175px;
+  }
+}
+
+.user__item {
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.user__label {
+  margin-right: 26px;
+}
+
+.user__input {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+
+  font-size: $medium;
+  line-height: 18px;
+  color: $gray--text;
+  border: 0;
+  border-bottom: 2px solid $black;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 0 14px;
+    padding-left: 18px;
+
+    font-size: $big;
+  }
+}
+
+.user__input:hover,
+.user__input:focus {
+  border-bottom: 2px solid $green--lightest;
+  outline: none;
+}

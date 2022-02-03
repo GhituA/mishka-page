@@ -1,0 +1,28 @@
+.button {
+  display: block;
+  padding: 14px 0;
+
+  font-size: $medium;
+  line-height: 20px;
+  font-weight: bold;
+  color: $gray--text;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  border: 2px solid $gray--text;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: $white;
+  background-color: $gray--text;
+  transition: 0.2s;
+}
+
+.button:active {
+  color: $white-30;
+}

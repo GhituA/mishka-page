@@ -1,0 +1,77 @@
+.user-list {
+  display: flex;
+  flex-direction: column;
+
+  @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.user-list__item {
+  display: flex;
+  justify-content: center;
+
+  border-bottom: 1px solid $gray--border;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.user-list__link {
+  position: relative;
+
+  @include nav-link;
+
+  @media (min-width: $tablet-width) {
+    min-height: 89px;
+  }
+}
+
+.user-list__link--search {
+  @media (min-width: $tablet-width) {
+    padding: 32px 41px;
+
+    font-size: 0;
+    border-left: 1px solid $gray--border;
+    border-right: 1px solid $gray--border;
+  }
+}
+
+.user-list__link--cart {
+  @media (min-width: $tablet-width) {
+    padding-left: 82px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 83px;
+  }
+}
+
+.user-list__icon {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+
+  margin-top: -10px;
+
+  color: $gray--text;
+  opacity: 0.2;
+}
+
+.user-list__link:hover .user-list__icon,
+.user-list__link:focus .user-list__icon {
+  color: $green;
+  opacity: 1;
+}
+
+.user-list__link:active .user-list__icon {
+  opacity: 0.3;
+}

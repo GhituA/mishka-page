@@ -1,0 +1,150 @@
+.cart-popup {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(255, 255, 255, 0.9);
+
+  &--show {
+    display: block;
+  }
+
+  &--hide {
+    display: none;
+  }
+}
+
+.cart-popup__wrapper {
+  width: 100%;
+
+  text-align: center;
+
+  border: 1px solid #c6c6c6;
+  background-color: $white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+  }
+}
+
+.cart-popup__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 28px 30px 50px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 32px 90px 50px;
+  }
+}
+
+.cart-popup__title {
+  margin: 0 25px 14px;
+
+  font-size: $large;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 15px;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.cart-popup__text {
+  display: block;
+  margin-bottom: 24px;
+
+  font-size: $small;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+
+    font-size: $medium;
+  }
+}
+
+.cart-popup__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 17px;
+  }
+}
+
+.cart-popup__item label {
+  position: relative;
+
+  display: block;
+  padding-top: 18px;
+  width: 80px;
+  height: 50px;
+
+  font-size: $medium;
+  line-height: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+  user-select: none;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
+}
+
+.cart-popup__input + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 80px;
+  height: 50px;
+
+  border: 2px solid $gray--border;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
+}
+
+.cart-popup__input:hover + label::before,
+.cart-popup__input:focus + label::before {
+  border: 2px solid $gray--text-30;
+}
+
+.cart-popup__input:checked + label::before {
+  border: 2px solid $green;
+}
+
+.cart-popup__button {
+  width: 260px;
+  margin: 0 auto;
+
+  color: $white;
+  background-color: $green;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    padding: 16px 0;
+  }
+}

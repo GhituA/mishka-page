@@ -1,0 +1,26 @@
+.promo-list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    @include list-reset;
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    bottom: -62px;
+
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.promo-list__link {
+  @include nav-link;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 22px;
+    padding: 20px;
+
+    font-size: $small;
+    border: 0;
+  }
+}

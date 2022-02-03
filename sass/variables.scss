@@ -1,0 +1,36 @@
+/*grays*/
+$black: #000000;
+$white: #ffffff;
+$gray--text: #444444;
+$gray--bg-light: #f1f1f1;
+$gray--bg: #f2f2f2;
+$gray--border: #ececec;
+
+/*colors*/
+$green: #63d1bb; /*rgb( 99, 209, 187) hsb( 168, 53, 82)*/
+$green--lighten: #59d5bc; /*rgb( 89, 213, 188) hsb( 168, 58, 84)*/
+$green--lightest: #62d1ba; /*rgb( 99, 209, 186) hsb( 168, 53, 82)*/
+$green--dark: #56c3b2; /*rgb( 86, 195, 178) hsb( 171, 56, 76)*/
+$green--darken: #46c1ae; /*rgb( 70, 193, 174) hsb( 174, 64, 76)*/
+
+/*hovers and actives*/
+$black-60: rgba(0, 0, 0, 0.6);
+$black-30: rgba(0, 0, 0, 0.3);
+$white-30: rgba(255, 255, 255, 0.6);
+$gray--text-30: rgba(68, 68, 68, 0.3);
+$green-30: rgba(99, 209, 187, 0.3);
+
+/*text size*/
+$smallest: 13px;
+$small: 15px;
+$medium: 17px;
+$big: 19px;
+$large: 25px;
+
+/*device size*/
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

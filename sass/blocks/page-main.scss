@@ -1,0 +1,124 @@
+.page-main__head {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 176px;
+  padding: 72px 35px 35px;
+
+  text-align: center;
+
+  background-color: $gray--bg;
+
+  @media (min-width: $tablet-width) {
+    min-height: 226px;
+    padding: 94px 5% 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 255px;
+    padding: 94px 23% 35px;
+  }
+}
+
+.page-main__head--index {
+  height: 282px;
+
+  background-color: #fafafa;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top -18px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 746px;
+    padding: 152px 5%;
+
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 154px 23%;
+    background-image: url("../img/hero-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
+  }
+}
+
+.page-main__head--outer {
+  position: relative;
+}
+
+.page-main__head--outer::after {
+  @media (min-width: $tablet-width) {
+    content: "  ";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+
+    width: 100%;
+    height: 22px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat;
+    background-size: $tablet-width;
+    background-position: 50% top;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -3px;
+
+    background-size: $desktop-width;
+  }
+}
+
+.page-main__title {
+  width: 300px;
+  margin: 0;
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.page-main__text {
+  display: block;
+  padding: 24px 30px;
+
+  font-size: $smallest;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 72px 50px 56px;
+
+    font-size: $medium;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 120px 225px 58px;
+  }
+}

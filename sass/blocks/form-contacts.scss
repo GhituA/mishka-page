@@ -1,0 +1,125 @@
+.form-contacts {
+  @media (min-width: $tablet-width) {
+    padding: 46px 0 40px;
+
+    background-color: $gray--bg-light;
+  }
+}
+
+.form-contacts__field {
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 167px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+    margin-right: 175px;
+  }
+}
+
+.form-contacts__field-name {
+  left: 0;
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    left: 62px;
+
+    width: 114px;
+
+    text-align: left;
+  }
+
+  &--email {
+    @media (min-width: $tablet-width) {
+      top: 30px;
+    }
+  }
+}
+
+.form-contacts__field-name--email::after {
+  width: 179px;
+}
+
+.form-contacts__input {
+  position: relative;
+  z-index: 1;
+  display: block;
+
+  width: 100%;
+  padding: 18px 0 14px;
+
+  font-size: $big;
+  line-height: 18px;
+  color: $gray--text;
+
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid $black;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 0 14px;
+    padding-left: 18px;
+
+    font-size: $big;
+  }
+}
+
+.form-contacts__input:hover,
+.form-contacts__input:focus {
+  border-bottom: 2px solid $green--lightest;
+  outline: none;
+}
+
+.form-contacts__input--email {
+  padding: 22px 0 16px;
+
+  font-size: $medium;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+
+    font-size: $big;
+  }
+}
+
+.form-contacts__image {
+  position: absolute;
+  color: $black;
+  opacity: 0.2;
+
+  &--phone {
+    bottom: 17px;
+    right: 9px;
+
+    @media (min-width: $tablet-width) {
+      bottom: 17px;
+      right: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 9px;
+    }
+  }
+
+  &--email {
+    bottom: 8px;
+    right: 4px;
+
+    @media (min-width: $tablet-width) {
+      right: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 5px;
+    }
+  }
+}
+
+.order__input:hover + .form-contacts__image,
+.order__input:focus + .form-contacts__image {
+  color: $green--lightest;
+  opacity: 1;
+}
